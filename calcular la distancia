@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void){
+ 	int i,a;
+ 	int distancia=0, numero;
+ 	a=3;
+ 	printf("calcula la distancia \n");
+ 	distancia= rand() %116;
+ 	printf("\1");
+ 	for (i=0; i<distancia; i++)
+	 {
+	 	printf("\260");	
+	 }
+	 printf("(\3)\n");
+	 printf ("indica a que distancia se quedo el hombre del corazon\n");
+	 scanf("%d", &numero);
+	
+	 {
+	 	if (distancia==numero)
+	 	printf("el numero de pasos que inserto %d es correcto \n",numero);
+	 	else
+	 	printf("el numero de pasos que inserto %d es incorrecto el numero correcto era: %d\n",numero,distancia);
+	 }
+	  return 0;
+ }

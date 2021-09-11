@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+ int main(void){
+ 	int moneda;
+ 	int c;
+ 	int cantidad=0;
+ 	printf("AGUILA O SOL \n");
+ 	printf("indica el valor de apuesta: \n");
+ 	scanf("%d", &cantidad);
+ 	printf("indica la cara que prefieras 1)sol 2)aguila: \n");
+ 	scanf("%d",&c);
+ 	switch(c)
+ 	{
+ 		{
+	 	case 1:
+	 		moneda=rand()%2;
+	 		if (moneda==0)
+	 		printf("\n ha salido sol ganas el doble: %d\n",cantidad*2);
+		    else 
+		  	printf("\n no ha salido aguila, pierdes %d\n",cantidad);
+		  	break;
+		  }
+		  {
+		case 2:
+			moneda=rand()%2;
+	 		if (moneda==0)
+	 		printf("\n ha salido aguila ganas el doble: %d\n",cantidad*2);
+		     else 
+		  	printf("\n no ha salido aguila, pierdes: %d\n",cantidad);
+		  	break;
+		  }
+		  return 0; 
+	   }
+}
